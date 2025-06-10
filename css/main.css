@@ -1,0 +1,97 @@
+/* Start of General CSS */
+
+@font-face {
+    font-family: navbar;
+    src: url(./../fonts/Poppins/Poppins-Regular.ttf);
+}
+
+
+/* Start of Navbar */
+.navbar {
+    /* --bs-navbar-padding-y:0.3rem; */
+
+    --bs-navbar-toggler-border-color: transparent;
+    --bs-navbar-toggler-focus-width: 0;
+    /* --bs-border-width: 1px;
+    --bs-border-style: solid; 
+    --bs-border-color: #dee2e6; */
+
+    --bs-navbar-brand-padding-y: 0;
+    --bs-navbar-padding-y: 0;
+    --bs-navbar-toggler-padding-y: 0;
+    --bs-navbar-active-color: #787878;
+    --bs-navbar-hover-color: #787878;
+    --bs-navbar-color: #393939;
+    border-bottom: #dee2e6 solid 1px;
+}
+
+.navbar ul li a {
+    font-family: navbar, sans-serif;
+    /* color: #787878; */
+    font-size: 13px;
+    line-height: 20px;
+    padding: 20px 15px;
+    font-weight: 600;
+}
+
+.navbar-nav {
+    border-top: #dee2e6 solid 1px;
+}
+
+nav .logo {
+    height: 50px;
+    display: table;
+    /* --bs-navbar-brand-padding-y: 1rem; */
+}
+
+nav .logo img {
+    max-height: 40px;
+    display: block;
+    /* --bs-navbar-brand-padding-y:0; */
+}
+
+.navbar .logo>a {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.navbar-toggler {
+    /* --bs-navbar-toggler-border-color: black; */
+
+    --bs-navbar-toggler-border-radius: 0;
+    border-left: solid #dee2e6 1px;
+    --bs-navbar-toggler-padding-y: 0.9rem;
+}
+
+.nav-social {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 20px;
+    /* --bs-nav-link-font-weight: ; */
+    /* --bs-nav-link-color: #393939; */
+    /* --bs-nav-link-hover-color: var(--bs-navbar-hover-color); */
+    /* --bs-nav-link-disabled-color: var(--bs-navbar-disabled-color); */
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-social a {
+    color: #393939;
+    transition: color 0.5s ease-in-out;
+    -webkit-transition: color 0.5s ease-in-out;
+    -moz-transition: color 0.5s ease-in-out;
+    -ms-transition: color 0.5s ease-in-out;
+    -o-transition: color 0.5s ease-in-out;
+}
+
+.nav-social a:hover {
+    color: #787878;
+}
+
+.nav-social a .nav-link {
+    font-size: 0.8rem;
+}
+
+/* End of Navbar */
