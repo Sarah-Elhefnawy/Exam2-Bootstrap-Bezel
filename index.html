@@ -13,7 +13,7 @@
 
 <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg shadow-lg">
+    <nav class="navbar navbar-expand-lg shadow-lg position-fixed w-100 z-3">
         <div class="container">
             <div class="logo">
                 <a class="navbar-brand" href="#">
@@ -21,8 +21,8 @@
                 </a>
             </div>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -50,16 +50,83 @@
                     </li>
                 </ul>
             </div>
-            <div class="border-start ms-2">
+            <div class="nav-social-container border-start ms-2">
                 <ul class="nav-social ms-auto">
-                    <a href="#"><li class="nav-link px-3 ms-2"><i class="fa-brands fa-facebook-f"></i></li></a>
-                    <a href="#"><li class="nav-link px-3"><i class="fa-brands fa-twitter"></i></li></a>
-                    <a href="#"><li class="nav-link px-3"><i class="fa-brands fa-instagram"></i></li></a>
+                    <a href="#">
+                        <li class="nav-link px-3 ms-2"><i class="fa-brands fa-facebook-f"></i></li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link px-3"><i class="fa-brands fa-twitter"></i></li>
+                    </a>
+                    <a href="#">
+                        <li class="nav-link px-3"><i class="fa-brands fa-instagram"></i></li>
+                    </a>
                 </ul>
             </div>
         </div>
     </nav>
     <!-- End of navbar -->
+    
+    <!-- Start of Header -->
+    <header id="header" class="header text-center vh-100 overflow-hidden">
+        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> -->
+        <div id="carouselExampleIndicators" class="carousel slide">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                    aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                    aria-label="Slide 2"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item min-vh-100 active header-first">
+                    <div class="inner-header">
+                        <h1>Get Awsome.</h1>
+                        <p class="mb-4">We are an innovative company making digital stuff.</p>
+                        <div class="header-buttons">
+
+                            <a href="#" class="btn btn-custom me-2">Read More</a>
+                            <a href="#" class="btn btn-custom btn-custom2">Contact</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item min-vh-100 header-second">
+                    <div class="inner-header">
+                        <h1>Create With Bezel.</h1>
+                        <p class="mb-4">We help ambitious companies create new value.</p>
+                        <div class="header-buttons">
+
+                            <a href="#" class="btn btn-custom me-2">Hire Us</a>
+                            <a href="#" class="btn btn-custom btn-custom2">Services</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </header>
+    <!-- End of Header -->
+
+    <main>
+        <!-- Start of About -->
+        <section id="about" class="about">
+            <div class="container">
+                <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium maxime soluta blanditiis quod
+                    mollitia omnis laborum! Eaque quis reiciendis quia doloremque sit voluptate illo inventore
+                    voluptates? Molestiae itaque fuga repudiandae!</h1>
+            </div>
+        </section>
+        <!-- End of About -->
+    </main>
+
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 

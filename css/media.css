@@ -107,6 +107,10 @@
         border-top: #dee2e6 solid 0px;
     }
 
+    .nav-social-container {
+        display: block;
+    }
+
     /* .lg-100 {
         width: 100%;
     }
