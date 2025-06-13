@@ -13,39 +13,43 @@
 
 <body>
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg shadow-lg position-fixed w-100 z-3">
+    <nav class="navbar bg-light navbar-expand-lg shadow-lg position-fixed w-100 z-3">
         <div class="container">
             <div class="logo">
                 <a class="navbar-brand" href="#">
                     <img src="./images/logo-dark.png" alt="bezel logo dark theme">
                 </a>
             </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <button onclick="navBtnClick()" class="navBtn navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <div class="hamberger">
+                    <div class="hamberger-box">
+                        <div class="hamberger-inner"></div>
+                    </div>
+                </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item py-1 py-lg-0 mx-lg-1">
+                    <li class="nav-item py-lg-0 mx-lg-1">
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
-                    <li class="nav-item py-1 py-lg-0 mx-lg-1">
+                    <li class="nav-item py-lg-0 mx-lg-1">
                         <a class="nav-link" href="#">About</a>
                     </li>
-                    <li class="nav-item py-1 py-lg-0 mx-lg-1">
+                    <li class="nav-item py-lg-0 mx-lg-1">
                         <a class="nav-link" href="#">Team</a>
                     </li>
-                    <li class="nav-item py-1 py-lg-0 mx-lg-1">
+                    <li class="nav-item py-lg-0 mx-lg-1">
                         <a class="nav-link" href="#">Services</a>
                     </li>
-                    <li class="nav-item py-1 py-lg-0 mx-lg-1">
+                    <li class="nav-item py-lg-0 mx-lg-1">
                         <a class="nav-link" href="#">Works</a>
                     </li>
-                    <li class="nav-item py-1 py-lg-0 mx-lg-1">
+                    <li class="nav-item py-lg-0 mx-lg-1">
                         <a class="nav-link" href="#">Pricing</a>
                     </li>
-                    <li class="nav-item py-1 py-lg-0 mx-lg-1">
+                    <li class="nav-item py-lg-0 mx-lg-1">
                         <a class="nav-link" href="#">Contact</a>
                     </li>
                 </ul>
@@ -66,7 +70,7 @@
         </div>
     </nav>
     <!-- End of navbar -->
-    
+
     <!-- Start of Header -->
     <header id="header" class="header text-center vh-100 overflow-hidden">
         <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> -->
@@ -101,7 +105,7 @@
                     </div>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
                 data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -110,7 +114,7 @@
                 data-bs-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Next</span>
-            </button>
+            </button> -->
         </div>
     </header>
     <!-- End of Header -->
