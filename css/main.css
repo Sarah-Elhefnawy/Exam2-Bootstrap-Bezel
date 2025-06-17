@@ -5,6 +5,11 @@
     src: url(./../fonts/Poppins/Poppins-Regular.ttf);
 }
 
+@font-face {
+    font-family: "Source Sans Pro";
+    src: url(./../fonts/Source_Code_Pro/static/SourceCodePro-Regular.ttf);
+}
+
 
 /* Start of Navbar */
 .navbar {
@@ -277,3 +282,62 @@ nav .logo img {
 }
 
 /* End of Header */
+
+/* Start of About */
+.about {
+    color: #787878;
+    /* font-family: "Source Sans Pro", sans-serif; */
+    font-size: 16px;
+    line-height: 24px;
+    padding: 110px 0;
+    font-weight: 400;
+    border-bottom: #787878 1px solid;
+}
+
+.about h2 {
+    color: #1f1f1f;
+    font-family: navbar;
+    font-size: 13px;
+    line-height: 16.9px;
+    letter-spacing: 0.65px;
+    margin: 0 0 10px;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.about p {
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 30px;
+    margin: 20px 0;
+    font-weight: 100;
+}
+
+.about p span {
+    color: #00C3DA;
+}
+
+.about p span::after {
+    content: "|";
+    color: #787878;
+}
+
+.about a.btn-about {
+    letter-spacing: 0.55px;
+    text-transform: uppercase;
+    --bs-btn-padding-x: 30px;
+    --bs-btn-padding-y: 0;
+    --bs-btn-font-family: navbar, sans-serif;
+    --bs-btn-font-size: 11px;
+    --bs-btn-font-weight: 500;
+    --bs-btn-line-height: 48px;
+    --bs-btn-color: #1f1f1f;
+    --bs-btn-bg: #fff;
+    --bs-btn-border-width: 1px;
+    --bs-btn-border-color: #dedede;
+    --bs-btn-border-radius: 0;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #1f1f1f;
+    --bs-btn-hover-border-color: #1f1f1f;
+}
+/* End of About */
