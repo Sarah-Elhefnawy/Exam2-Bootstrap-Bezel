@@ -291,7 +291,7 @@ nav .logo img {
     line-height: 24px;
     padding: 110px 0;
     font-weight: 400;
-    border-bottom: #787878 1px solid;
+    border-bottom: #dedede 1px solid;
 }
 
 .about h2 {
@@ -340,4 +340,96 @@ nav .logo img {
     --bs-btn-hover-bg: #1f1f1f;
     --bs-btn-hover-border-color: #1f1f1f;
 }
+
 /* End of About */
+
+/* Start of Team */
+.team {
+    color: #787878;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 110px 0;
+    font-weight: 400;
+}
+
+.team h2 {
+    color: #1f1f1f;
+    font-family: navbar, sans-serif;
+    font-size: 32px;
+    line-height: 41.6px;
+    letter-spacing: -1px;
+    margin: 20px 0 10px;
+    font-weight: 700;
+}
+
+.team h3 {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+
+.nav-social-team {
+    --bs-nav-link-padding-x: 0;
+    --bs-nav-link-padding-y: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+.nav-social-team a {
+    font-size: 13px;
+    color: #fff;
+    text-shadow: 0;
+    transition: text-shadow 0.5s ease-in-out;
+    -webkit-transition: text-shadow 0.5s ease-in-out;
+    -moz-transition: text-shadow 0.5s ease-in-out;
+    -ms-transition: text-shadow 0.5s ease-in-out;
+    -o-transition: text-shadow 0.5s ease-in-out;
+}
+
+.nav-social-team a:hover {
+    color: #fff;
+    text-shadow: 1px 1px 5px #fff;
+}
+
+.team .team-bottom h4 {
+    font-family: navbar, sans-serif;
+    font-size: 13px;
+    line-height: 16.9px;
+    letter-spacing: 0.52px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.team .team-bottom h5 {
+    font-family: navbar, sans-serif;
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 400;
+}
+
+.team .team-overlay {
+    background-color: #00d6eee1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity 0.7s ease;
+    -webkit-transition: opacity 0.7s ease;
+    -moz-transition: opacity 0.7s ease;
+    -ms-transition: opacity 0.7s ease;
+    -o-transition: opacity 0.7s ease;
+}
+
+.team .image-card:hover .team-overlay {
+    opacity: 1;
+}
+
+/* End of Team */
