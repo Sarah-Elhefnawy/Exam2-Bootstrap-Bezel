@@ -433,3 +433,63 @@ nav .logo img {
 }
 
 /* End of Team */
+
+/* Start of Services */
+.service {
+    /* background-color: #1f1f1f; */
+    background-color: #626262;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    padding-top: 110px;
+    padding-bottom: 110px;
+}
+
+.service span {
+    display: block;
+    font-family: navbar, sans-serif;
+    font-size: 13px;
+    line-height: 16.9px;
+    letter-spacing: 1.3px;
+    /* margin: 0 0 10px; */
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 26px;
+    margin-bottom: 26px;
+    padding: 0 10px;
+}
+
+.service h2 {
+    font-family: navbar, sans-serif;
+    font-size: 32px;
+    line-height: 41.6px;
+    letter-spacing: -1px;
+    margin: 20px 0 10px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.service p {
+    font-size: 14px;
+    line-height: 24px;
+    margin: 20px 0 30px;
+    font-weight: 400;
+}
+
+.service li {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 6px 0;
+    font-weight: 400;
+}
+
+.service ul li::before {
+    content: "\f058";
+    font-family: 'Font Awesome 6 Free';
+    font-style: normal;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+/* End of Services */
