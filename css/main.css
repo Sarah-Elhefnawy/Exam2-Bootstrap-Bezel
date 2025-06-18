@@ -233,7 +233,7 @@ nav .logo img {
     font-weight: 400;
 }
 
-.header a.btn-custom {
+a.btn-custom {
     --bs-btn-padding-x: 30px;
     --bs-btn-padding-y: 0;
     --bs-btn-font-family: navbar, sans-serif;
@@ -248,6 +248,7 @@ nav .logo img {
     -moz-transition: transform .15s ease-in-out;
     -ms-transition: transform .15s ease-in-out;
     -o-transition: transform .15s ease-in-out;
+    --bs-btn-hover-color: #fff;
 }
 
 .btn-custom:hover {
@@ -493,3 +494,104 @@ nav .logo img {
 }
 
 /* End of Services */
+
+/* Start of Pricing */
+.pricing {
+    color: #787878;
+    font-family: "Source Sans Pro", sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 110px 0;
+    font-weight: 400;
+}
+
+.pricing h2 {
+    color: #1f1f1f;
+    font-family: navbar, sans-serif;
+    font-size: 32px;
+    line-height: 41.6px;
+    letter-spacing: -1px;
+    margin: 20px 0 10px;
+    font-weight: 900;
+    text-align: center;
+}
+
+.pricing h3 {
+    font-size: 18px;
+    line-height: 23.4px;
+    margin: 10px 0;
+    font-weight: 400;
+    text-align: center;
+}
+
+.pricing .card {
+    --bs-card-border-color: transparent;
+    --bs-card-border-radius: 0;
+    --bs-card-bg: white;
+    background-color: white;
+    max-width: 400px;
+    margin: 50px auto 25px;
+    padding: 25px 15px;
+    background-color: #fff;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.115);
+}
+
+.pricing .card h4 {
+    color: #1f1f1f;
+    font-family: navbar;
+    font-size: 13px;
+    line-height: 16.9px;
+    font-weight: 400;
+    position: relative;
+}
+
+.pricing .badge-best {
+    --bs-badge-font-size: 9px;
+    --bs-badge-font-weight: 700;
+    --bs-badge-padding-y: 5px;
+    --bs-badge-padding-x: 10px;
+    font-family: navbar, sans-serif;
+    font-weight: 500;
+    line-height: 13.5px;
+    vertical-align: baseline;
+    background-color: #00C3DA;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+}
+
+.pricing .card p {
+    color: #1f1f1f;
+    font-family: navbar;
+    font-size: 55px;
+    line-height: 71.5px;
+    letter-spacing: -3px;
+    font-weight: 500;
+    border-bottom: #dee2e6 1px solid;
+    padding: 15px 0;
+}
+
+.pricing .card .pricing-best p {
+    color: #00C3DA;
+}
+
+.pricing .card p span {
+    font-family: navbar;
+    font-size: 18px;
+    line-height: 23.4px;
+    letter-spacing: -3px;
+    vertical-align: top;
+    font-weight: 400;
+}
+
+.pricing .card ul {
+    color: #787878;
+    padding-top: 15px;
+}
+
+.pricing .card .btn-pricing {
+    --bs-btn-padding-x: 13px;
+    font-size: 12px;
+}
+
+/* End of Pricing */

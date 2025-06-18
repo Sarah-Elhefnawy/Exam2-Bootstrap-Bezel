@@ -111,6 +111,14 @@
         display: block;
     }
 
+    .pricing .card.pricing-best {
+        transform: scale(1.08);
+        -webkit-transform: scale(1.08);
+        -moz-transform: scale(1.08);
+        -ms-transform: scale(1.08);
+        -o-transform: scale(1.08);
+    }
+
     /* .lg-100 {
         width: 100%;
     }
