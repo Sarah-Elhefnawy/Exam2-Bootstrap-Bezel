@@ -11,9 +11,9 @@
     <title>Bezel</title>
 </head>
 
-<body>
+<body data-bs-spy="scroll" data-bs-target="navid">
     <!-- Start of navbar -->
-    <nav class="navbar navbar-expand-lg shadow-lg position-fixed w-100 z-3">
+    <nav ID="navid" class="navbar navbar-expand-lg shadow-lg position-fixed w-100 z-3">
         <div class="container">
             <div class="logo">
                 <a class="navbar-brand" href="#">
@@ -84,37 +84,41 @@
             <div class="carousel-inner">
                 <div class="carousel-item min-vh-100 active header-first">
                     <div class="inner-header">
-                        <h1>Get Awsome.</h1>
-                        <p class="mb-4">We are an innovative company making digital stuff.</p>
-                        <div class="header-buttons">
+                        <div class="inner position-absolute top-50 start-50 translate-middle">
+                            <h1>Get Awsome.</h1>
+                            <p class="mb-4">We are an innovative company making digital stuff.</p>
+                            <div class="header-buttons">
 
-                            <a href="#" class="btn btn-header-read me-2">Read More</a>
-                            <a href="#" class="btn btn-header-contact me-2">Contact</a>
+                                <a href="#" class="btn btn-header-read me-2">Read More</a>
+                                <a href="#" class="btn btn-header-contact me-2">Contact</a>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="carousel-item min-vh-100 header-second">
                     <div class="inner-header">
-                        <h1>Create With Bezel.</h1>
-                        <p class="mb-4">We help ambitious companies create new value.</p>
-                        <div class="header-buttons">
+                        <div class="inner position-absolute top-50 start-50 translate-middle">
+                            <h1>Create With Bezel.</h1>
+                            <p class="mb-4">We help ambitious companies create new value.</p>
+                            <div class="header-buttons">
 
-                            <a href="#" class="btn btn-header-read me-2">Hire Us</a>
-                            <a href="#" class="btn btn-header-contact me-2">Services</a>
+                                <a href="#" class="btn btn-header-read me-2">Hire Us</a>
+                                <a href="#" class="btn btn-header-contact me-2">Services</a>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-            </button> -->
+            <div class="left-right position-fixed top-50 start-0 translate-middle-y d-flex flex-column">
+                <button class="overflow-hidden" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="prev">
+                    <i class="fa-solid fa-chevron-left z-3 fs-4"></i>
+                </button>
+                <button class="overflow-hidden" type="button" data-bs-target="#carouselExampleIndicators"
+                    data-bs-slide="next">
+                    <i class="fa-solid fa-chevron-right z-3 fs-4"></i>
+                </button>
+            </div>
         </div>
     </header>
     <!-- End of Header -->
@@ -472,6 +476,45 @@
             </div>
         </section>
         <!-- End of Work -->
+
+        <!-- Start of Contact -->
+        <section id="contact" class="contact bg-white">
+            <div class="row g-0">
+                <div class="col-12 col-lg-6">
+                    <div class="ContactInfo-iframe">
+                        <iframe width="550px" height="550px"
+                            src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6 mt-5">
+                    <div class="text-start mx-4">
+                        <h2>Get In Touch</h2>
+                        <h3>Let's work together.</h3>
+                        <form class="mt-5 mb-4">
+                            <div class="mb-3">
+                                <label for="name" class="form-label">Your Name</label>
+                                <input type="text" class="form-control" id="name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Your Email</label>
+                                <input type="email" class="form-control" id="email">
+                            </div>
+                            <div class="mb-3">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="number" class="form-control" id="phone">
+                            </div>
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Your Message</label>
+                                <textarea class="form-control" id="message" rows="3"></textarea>
+                            </div>
+                            <a class="btn btn-header-read btn-pricing mt-3" href="#">Send Message</a>
+                        </form>
+                    </div>
+                </div>
+        </section>
+        <!-- End of Contact -->
     </main>
 
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
