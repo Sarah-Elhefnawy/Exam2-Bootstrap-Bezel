@@ -641,7 +641,6 @@ a.btn-header-read::before {
 
 .work-img img {
     width: 100px;
-    height: 100px;
 }
 
 .work-box {
@@ -653,8 +652,13 @@ a.btn-header-read::before {
 
 .work-img {
     position: absolute;
-    bottom: 70%;
+    top: 0;
     left: 50%;
+    transform: translate(-50% -50%);
+    -webkit-transform: translate(-50% -50%);
+    -moz-transform: translate(-50% -50%);
+    -ms-transform: translate(-50% -50%);
+    -o-transform: translate(-50% -50%);
 }
 
 .work h2 {

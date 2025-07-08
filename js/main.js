@@ -47,9 +47,9 @@ function updateLogoBasedOnBackground() {
   const style = window.getComputedStyle(navbar);
   const bgColor = style.backgroundColor;
   if (bgColor === 'rgba(0, 0, 0, 0)' || bgColor === 'transparent') {
-    logoImg.setAttribute('src', './../images/logo-light.png');
+    logoImg.setAttribute('src', './images/logo-light.png');
   } else {
-    logoImg.setAttribute('src', './../images/logo-dark.png');
+    logoImg.setAttribute('src', './images/logo-dark.png');
   }
 }
 document.addEventListener('DOMContentLoaded', updateLogoBasedOnBackground);
