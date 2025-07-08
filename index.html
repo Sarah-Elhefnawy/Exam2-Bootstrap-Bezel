@@ -13,49 +13,49 @@
 
 <body data-bs-spy="scroll" data-bs-target="navid">
     <!-- Start of navbar -->
-    <nav ID="navid" class="navbar navbar-expand-lg shadow-lg position-fixed w-100 z-3">
+    <nav id="navid" class="navbar navbar-expand-lg shadow-lg position-fixed w-100 z-3">
         <div class="container">
             <div class="logo">
-                <a class="navbar-brand" href="#">
-                    <img src="./images/logo-light.png" alt="bezel logo light theme">
+                <a class="navbar-brand d-table-cell" href="#">
+                    <img src="./images/logo-light.png" class="d-block" alt="bezel logo light theme">
                 </a>
             </div>
-            <button onclick="navBtnClick()" class="navBtn navbar-toggler" type="button" data-bs-toggle="collapse"
+            <button class="navBtn navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <div class="hamberger">
-                    <div class="hamberger-box">
-                        <div class="hamberger-inner"></div>
+                <div class="navBtnn">
+                    <div class="navBtnn-box">
+                        <div class="navBtnn-inner"></div>
                     </div>
                 </div>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item py-lg-0 mx-lg-1">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        <a class="nav-link lh-sm fw-semibold active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item py-lg-0 mx-lg-1">
-                        <a class="nav-link" href="#about">About</a>
+                        <a class="nav-link lh-sm fw-semibold" href="#about">About</a>
                     </li>
                     <li class="nav-item py-lg-0 mx-lg-1">
-                        <a class="nav-link" href="#team">Team</a>
+                        <a class="nav-link lh-sm fw-semibold" href="#team">Team</a>
                     </li>
                     <li class="nav-item py-lg-0 mx-lg-1">
-                        <a class="nav-link" href="#services">Services</a>
+                        <a class="nav-link lh-sm fw-semibold" href="#services">Services</a>
                     </li>
                     <li class="nav-item py-lg-0 mx-lg-1">
-                        <a class="nav-link" href="#work">Works</a>
+                        <a class="nav-link lh-sm fw-semibold" href="#work">Works</a>
                     </li>
                     <li class="nav-item py-lg-0 mx-lg-1">
-                        <a class="nav-link" href="#pricing">Pricing</a>
+                        <a class="nav-link lh-sm fw-semibold" href="#pricing">Pricing</a>
                     </li>
                     <li class="nav-item py-lg-0 mx-lg-1">
-                        <a class="nav-link" href="#contact">Contact</a>
+                        <a class="nav-link lh-sm fw-semibold" href="#contact">Contact</a>
                     </li>
                 </ul>
             </div>
             <div class="nav-social-container border-start ms-2">
-                <ul class="nav-social ms-auto">
+                <ul class="nav-social ms-auto mb-0 ps-0 list-unstyled d-flex flex-row">
                     <a href="#">
                         <li class="nav-link px-3 ms-2"><i class="fa-brands fa-facebook-f"></i></li>
                     </a>
@@ -73,8 +73,8 @@
 
     <!-- Start of Header -->
     <header id="header" class="header text-center vh-100 overflow-hidden">
-        <!-- <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel"> -->
-        <div id="carouselExampleIndicators" class="carousel slide">
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+            <!-- <div id="carouselExampleIndicators" class="carousel slide"> -->
             <div class="carousel-indicators">
                 <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
                     aria-current="true" aria-label="Slide 1"></button>
@@ -85,7 +85,7 @@
                 <div class="carousel-item min-vh-100 active header-first">
                     <div class="inner-header">
                         <div class="inner position-absolute top-50 start-50 translate-middle">
-                            <h1>Get Awsome.</h1>
+                            <h1 class="fw-bold">Get Awsome.</h1>
                             <p class="mb-4">We are an innovative company making digital stuff.</p>
                             <div class="header-buttons">
                                 <a href="#" class="btn btn-header-read me-2">Read More</a>
@@ -97,7 +97,7 @@
                 <div class="carousel-item min-vh-100 header-second">
                     <div class="inner-header">
                         <div class="inner position-absolute top-50 start-50 translate-middle">
-                            <h1>Create With Bezel.</h1>
+                            <h1 class="fw-bold">Create With Bezel.</h1>
                             <p class="mb-4">We help ambitious companies create new value.</p>
                             <div class="header-buttons">
 
@@ -126,11 +126,11 @@
         <!-- Start of About -->
         <section id="about" class="about text-center">
             <div class="container">
-                <h2>who we are</h2>
-                <p>We are an innovative company. We <span id="about-typed"></span>for
+                <h2 class="fw-medium text-uppercase">who we are</h2>
+                <p class="fs-6">We are an innovative company. We <span id="about-typed"></span>for
                     costumers around the world. Our clients are some of the most forward-looking companies in the world.
                 </p>
-                <a class="btn btn-about" href="read more">learn more</a>
+                <a class="btn btn-about text-uppercase" href="read more">learn more</a>
             </div>
         </section>
         <!-- End of About -->
@@ -138,17 +138,17 @@
         <!-- Start of Team -->
         <section id="team" class="team text-center">
             <div class="container">
-                <h2>Creative Team</h2>
-                <h3>We are digital thinkers</h3>
+                <h2 class="fw-bold">Creative Team</h2>
+                <h3 class="fw-normal">We are digital thinkers</h3>
 
                 <!-- Start of Images -->
                 <div class="row d-flex">
                     <div class="image-card col-12 col-md-6 col-lg-3">
-                        <div class="team-image position-relative">
+                        <div class="position-relative">
                             <img src="./images/team-1.jpg" class="d-block w-100 mt-4 mt-lg-0" alt="">
-                            <div class="team-overlay">
+                            <div class="team-overlay position-absolute top-0 bottom-0 start-0 end-0 z-2">
                                 <div class="container">
-                                    <ul class="nav-social-team">
+                                    <ul class="nav-social ms-auto mb-0 ps-0 list-unstyled d-flex flex-row">
                                         <a href="#">
                                             <li class="nav-link px-1"><i class="fa-brands fa-facebook-f"></i></li>
                                         </a>
@@ -161,7 +161,7 @@
                                     </ul>
                                     <div
                                         class="team-bottom text-white text-start position-absolute bottom-0 start-2 mb-2">
-                                        <h4>Luke Cage</h4>
+                                        <h4 class="fw-semibold text-uppercase">Luke Cage</h4>
                                         <h5>Founder & CEO</h5>
                                     </div>
                                 </div>
@@ -169,11 +169,11 @@
                         </div>
                     </div>
                     <div class="image-card col-12 col-md-6 col-lg-3">
-                        <div class="team-image position-relative">
+                        <div class="position-relative">
                             <img src="./images/team-2.jpg" class="d-block w-100 mt-4 mt-lg-0" alt="">
-                            <div class="team-overlay">
+                            <div class="team-overlay position-absolute top-0 bottom-0 start-0 end-0 z-2">
                                 <div class="container">
-                                    <ul class="nav-social-team">
+                                    <ul class="nav-social ms-auto mb-0 ps-0 list-unstyled d-flex flex-row">
                                         <a href="#">
                                             <li class="nav-link px-1"><i class="fa-brands fa-facebook-f"></i></li>
                                         </a>
@@ -186,7 +186,7 @@
                                     </ul>
                                     <div
                                         class="team-bottom text-white text-start position-absolute bottom-0 start-2 mb-2">
-                                        <h4>Jessica Jones</h4>
+                                        <h4 class="fw-semibold text-uppercase">Jessica Jones</h4>
                                         <h5>Product Designer</h5>
                                     </div>
                                 </div>
@@ -194,11 +194,11 @@
                         </div>
                     </div>
                     <div class="image-card col-12 col-md-6 col-lg-3">
-                        <div class="team-image position-relative">
+                        <div class="position-relative">
                             <img src="./images/team-3.jpg" class="d-block w-100 mt-4 mt-lg-0" alt="">
-                            <div class="team-overlay">
+                            <div class="team-overlay position-absolute top-0 bottom-0 start-0 end-0 z-2">
                                 <div class="container">
-                                    <ul class="nav-social-team">
+                                    <ul class="nav-social ms-auto mb-0 ps-0 list-unstyled d-flex flex-row">
                                         <a href="#">
                                             <li class="nav-link px-1"><i class="fa-brands fa-facebook-f"></i></li>
                                         </a>
@@ -211,7 +211,7 @@
                                     </ul>
                                     <div
                                         class="team-bottom text-white text-start position-absolute bottom-0 start-2 mb-2">
-                                        <h4>Matt Murdock</h4>
+                                        <h4 class="fw-semibold text-uppercase">Matt Murdock</h4>
                                         <h5>Lead Developer</h5>
                                     </div>
                                 </div>
@@ -219,11 +219,11 @@
                         </div>
                     </div>
                     <div class="image-card col-12 col-md-6 col-lg-3">
-                        <div class="team-image position-relative">
+                        <div class="position-relative">
                             <img src="./images/team-4.jpg" class="d-block w-100 mt-4 mt-lg-0" alt="">
-                            <div class="team-overlay">
+                            <div class="team-overlay position-absolute top-0 bottom-0 start-0 end-0 z-2">
                                 <div class="container">
-                                    <ul class="nav-social-team">
+                                    <ul class="nav-social ms-auto mb-0 ps-0 list-unstyled d-flex flex-row">
                                         <a href="#">
                                             <li class="nav-link px-1"><i class="fa-brands fa-facebook-f"></i></li>
                                         </a>
@@ -236,7 +236,7 @@
                                     </ul>
                                     <div
                                         class="team-bottom text-white text-start position-absolute bottom-0 start-2 mb-2">
-                                        <h4>Claire Temple</h4>
+                                        <h4 class="fw-semibold text-uppercase">Claire Temple</h4>
                                         <h5>Sales Manager</h5>
                                     </div>
                                 </div>
@@ -254,39 +254,39 @@
                 <div class="row service-spans text-center mb-5">
                     <div class="col-lg-2 col-md-4 col-12 mb-lg-5">
                         <div class="inner">
-                            <span>stunning design</span>
+                            <span class="d-block fw-semibold text-uppercase">stunning design</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-12 mb-lg-5">
                         <div class="inner">
-                            <span>time saver</span>
+                            <span class="d-block fw-semibold text-uppercase">time saver</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-12 mb-lg-5">
                         <div class="inner">
-                            <span>clean code</span>
+                            <span class="d-block fw-semibold text-uppercase">clean code</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-12 mb-lg-5">
                         <div class="inner">
-                            <span>customizable</span>
+                            <span class="d-block fw-semibold text-uppercase">customizable</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-12 mb-lg-5">
                         <div class="inner">
-                            <span>perfect layout</span>
+                            <span class="d-block fw-semibold text-uppercase">perfect layout</span>
                         </div>
                     </div>
                     <div class="col-lg-2 col-md-4 col-12 mb-lg-5">
                         <div class="inner">
-                            <span>retina ready</span>
+                            <span class="d-block fw-semibold text-uppercase">retina ready</span>
                         </div>
                     </div>
                 </div>
                 <div class="row service-header text-center justify-content-lg-between">
                     <div class="col-lg-4 text-lg-start me-lg-5">
                         <div class="inner">
-                            <h2>what we do.</h2>
+                            <h2 class="fw-bold text-uppercase">what we do.</h2>
                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam ipsam ullam incidunt
                                 itaque
                                 nemo omnis temporibus totam quibusdam repellat vero, recusandae excepturi dignissimos
@@ -321,8 +321,8 @@
         <!-- Start of Pricing -->
         <section id="pricing" class="pricing">
             <div class="container">
-                <h2>Cheap Prices</h2>
-                <h3>We provide the best quality.</h3>
+                <h2 class="text-center fw-bolder">Cheap Prices</h2>
+                <h3 class="text-center">We provide the best quality.</h3>
                 <div class="row">
                     <div class="col-12 col-md-6 col-lg-3">
                         <div class="card">
@@ -426,34 +426,36 @@
         <section id="work" class="work text-center">
             <div class="container">
                 <div class="position-relative">
-                    <h2>Happy Customers</h2>
-                    <div id="carouselExampleIndicators2" class="carousel slide mx-auto">
+                    <h2 class="fw-bold text-uppercase mb-3">Happy Customers</h2>
+                    <div id="carouselExampleIndicators2" class="carousel w-75 slide mx-auto">
                         <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0"
-                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                                class="active rounded-circle" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1"
-                                aria-label="Slide 2"></button>
+                                class="rounded-circle" aria-label="Slide 2"></button>
                         </div>
                         <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="work-box shadow-sm">
-                                    <div class="work-img">
-                                        <img src="./images/testimonial-1.jpg" alt="...">
+                            <div class="carousel-item mt-5 active">
+                                <div class="work-box rounded-3 p-5 shadow-sm">
+                                    <div class="work-img translate-middle">
+                                        <img src="./images/testimonial-1.jpg" class="rounded-circle" alt="...">
                                     </div>
-                                    <h3>Marissa Mayer</h3>
-                                    <span>CEO, Yahoo</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, numquam incidunt
+                                    <h3 class="fs-4 fw-bold">Marissa Mayer</h3>
+                                    <span class="fw-medium text-uppercase">CEO, Yahoo</span>
+                                    <p class="mt-3 fw-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Porro, numquam incidunt
                                         odio magni enim impedit esse nostrum quibusdam quo!</p>
                                 </div>
                             </div>
-                            <div class="carousel-item">
-                                <div class="work-box shadow-sm">
-                                    <div class="work-img">
-                                        <img src="./images/testimonial-2.jpg" alt="...">
+                            <div class="carousel-item mt-5">
+                                <div class="work-box rounded-3 p-5 shadow-sm">
+                                    <div class="work-img translate-middle">
+                                        <img src="./images/testimonial-2.jpg" class="rounded-circle" alt="...">
                                     </div>
-                                    <h3>Marissa Mayer</h3>
-                                    <span>CEO, Yahoo</span>
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Porro, numquam incidunt
+                                    <h3 class="fs-4 fw-bold">Marissa Mayer</h3>
+                                    <span class="fw-medium text-uppercase">CEO, Yahoo</span>
+                                    <p class="mt-3 fw-lighter">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                        Porro, numquam incidunt
                                         odio magni enim impedit esse nostrum quibusdam quo!</p>
                                 </div>
                             </div>
@@ -461,14 +463,10 @@
                     </div>
                     <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2"
                         data-bs-slide="prev">
-                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span> -->
                         <i class="fa-solid fa-chevron-left"></i>
                     </button>
                     <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2"
                         data-bs-slide="next">
-                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
-                        <!-- <span class="visually-hidden">Next</span> -->
                         <i class="fa-solid fa-chevron-right"></i>
                     </button>
                 </div>
@@ -481,7 +479,7 @@
             <div class="row g-0">
                 <div class="col-12 col-lg-6">
                     <div class="ContactInfo-iframe">
-                        <iframe width="550px" height="550px"
+                        <iframe class="w-100"
                             src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;coord=52.70967533219885, -8.020019531250002&amp;q=1%20Grafton%20Street%2C%20Dublin%2C%20Ireland&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
                             frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
                     </div>
@@ -489,7 +487,7 @@
 
                 <div class="col-12 col-lg-6 mt-5">
                     <div class="text-start mx-4">
-                        <h2>Get In Touch</h2>
+                        <h2 class="fw-bold">Get In Touch</h2>
                         <h3>Let's work together.</h3>
                         <form class="mt-5 mb-4">
                             <div class="mb-3">

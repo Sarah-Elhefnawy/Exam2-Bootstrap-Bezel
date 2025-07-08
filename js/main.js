@@ -1,10 +1,13 @@
 const navbar = document.querySelector('.navbar');
 
-function navBtnClick() {
-  const hamberger = document.querySelector('.hamberger');
-  hamberger.classList.toggle('active');
-}
+// Nvabar button rotates on click
+const navBtn = document.querySelector('.navBtn');
+navBtn.addEventListener('click', function navBtnClick() {
+  const navBtnRotate = document.querySelector('.navBtnn');
+  navBtnRotate.classList.toggle('active');
+})
 
+// Typed.js
 var element = document.querySelector('#about-typed')
 var typed = new Typed(element, {
   strings: ['websites', 'softwares', 'apps'],
@@ -15,30 +18,30 @@ var typed = new Typed(element, {
 });
 
 // Navbar change colors when scroll
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
   const navbarBrand = document.querySelector('.navbar-brand');
   const navbarSocial = document.querySelectorAll('.nav-social a');
   const homeSection = document.querySelector('#header');
   const homeHeight = homeSection.offsetHeight + 5900;
-  
-  window.addEventListener('scroll', function() {
+
+  window.addEventListener('scroll', function () {
     if (scrollY > homeHeight * 0.05) {
       navbar.classList.add('scrolled');
       navbarBrand.classList.add('scrolled');
-      navbarSocial.forEach(function(link) {
+      navbarSocial.forEach(function (link) {
         link.classList.add('scrolled');
       });
     } else {
       navbar.classList.remove('scrolled');
       navbarBrand.classList.remove('scrolled');
-      navbarSocial.forEach(function(link) {
+      navbarSocial.forEach(function (link) {
         link.classList.remove('scrolled');
       });
     }
   });
 });
 
-
+// Navbar image changes when scroll
 function updateLogoBasedOnBackground() {
   const logoImg = document.querySelector('.logo a img');
   const style = window.getComputedStyle(navbar);

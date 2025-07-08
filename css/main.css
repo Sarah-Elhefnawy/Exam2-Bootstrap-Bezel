@@ -1,4 +1,9 @@
 /* Start of General CSS */
+:root {
+    --white-bg: #fff;
+    --text-main: #1f1f1f;
+    --text-hover: #787878;
+}
 
 @font-face {
     font-family: Poppins;
@@ -20,10 +25,10 @@ main {
     --bs-navbar-toggler-focus-width: 0;
     --bs-navbar-brand-padding-y: 0;
     --bs-navbar-padding-y: 0;
-    background-color: #fff;
+    background-color: var(--white-bg);
     --bs-navbar-toggler-padding-y: 0;
-    --bs-navbar-active-color: #787878;
-    --bs-navbar-hover-color: #787878;
+    --bs-navbar-active-color: var(--text-hover);
+    --bs-navbar-hover-color: var(--text-hover);
     --bs-navbar-color: #393939;
     border-bottom: #dee2e6 solid 1px;
 }
@@ -31,9 +36,7 @@ main {
 .navbar ul li a {
     font-family: Poppins, sans-serif;
     font-size: 13px;
-    line-height: 20px;
     padding: 15px 7px;
-    font-weight: 600;
 }
 
 .navbar-nav {
@@ -47,11 +50,9 @@ nav .logo {
 
 nav .logo img {
     max-height: 40px;
-    display: block;
 }
 
 .navbar .logo>a {
-    display: table-cell;
     vertical-align: middle;
 }
 
@@ -68,15 +69,10 @@ nav .logo img {
 .nav-social {
     --bs-nav-link-padding-x: 0;
     --bs-nav-link-padding-y: 20px;
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
 }
 
 .nav-social a {
-    color: #fff;
+    color: var(--white-bg);
     transition: color 0.3s ease;
     -webkit-transition: color 0.3s ease;
     -moz-transition: color 0.3s ease;
@@ -85,16 +81,14 @@ nav .logo img {
 }
 
 .nav-social a:hover {
-    color: #787878;
+    color: var(--text-hover);
 }
 
 .nav-social a .nav-link {
     font-size: 0.8rem;
 }
 
-.hamberger {
-    position: relative;
-    background-color: transparent;
+.navBtnn {
     transition: transform 0.5s ease;
     -webkit-transition: transform 0.5s ease;
     -moz-transition: transform 0.5s ease;
@@ -102,14 +96,13 @@ nav .logo img {
     -o-transition: transform 0.5s ease;
 }
 
-.hamberger-box {
-    height: 24px;
-    position: relative;
+.navBtnn-box {
     width: 22px;
+    height: 24px;
 }
 
-.hamberger-inner {
-    background-color: #1f1f1f;
+.navBtnn-inner {
+    background-color: var(--text-main);
     width: 22px;
     height: 2px;
     border-radius: 4px;
@@ -122,9 +115,9 @@ nav .logo img {
     -o-transition: all 0.5s ease;
 }
 
-.hamberger-inner::before {
+.navBtnn-inner::before {
     content: "";
-    background-color: #1f1f1f;
+    background-color: var(--text-main);
     display: block;
     height: 2px;
     width: 22px;
@@ -138,9 +131,9 @@ nav .logo img {
     -o-transition: transform 0.5s ease, top 0.5s ease, bottom 0.5s ease;
 }
 
-.hamberger-inner::after {
+.navBtnn-inner::after {
     content: "";
-    background-color: #1f1f1f;
+    background-color: var(--text-main);
     display: block;
     border-radius: 4px;
     width: 22px;
@@ -154,7 +147,7 @@ nav .logo img {
     -o-transition: transform 0.5s ease, top 0.5s ease, bottom 0.5s ease;
 }
 
-.hamberger.active {
+.navBtnn.active {
     transform: rotate(180deg);
     -webkit-transform: rotate(180deg);
     -moz-transform: rotate(180deg);
@@ -162,7 +155,7 @@ nav .logo img {
     -o-transform: rotate(180deg);
 }
 
-.hamberger.active .hamberger-inner {
+.navBtnn.active .navBtnn-inner {
     transform: rotate(45deg);
     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(45deg);
@@ -170,7 +163,7 @@ nav .logo img {
     -o-transform: rotate(45deg);
 }
 
-.hamberger.active .hamberger-inner::before {
+.navBtnn.active .navBtnn-inner::before {
     background-color: transparent;
     top: 0;
     transform: rotate(-45deg);
@@ -180,7 +173,7 @@ nav .logo img {
     -o-transform: rotate(-45deg);
 }
 
-.hamberger.active .hamberger-inner::after {
+.navBtnn.active .navBtnn-inner::after {
     bottom: 0;
     transform: rotate(90deg);
     -webkit-transform: rotate(90deg);
@@ -190,7 +183,7 @@ nav .logo img {
 }
 
 .navbar.scrolled {
-    background-color: #fff;
+    background-color: var(--white-bg);
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
@@ -223,28 +216,22 @@ nav .logo img {
 
 .header .inner-header {
     font-family: Poppins, sans-serif;
-    color: #fff;
+    color: var(--white-bg);
     width: 100%;
     height: 100%;
 }
-
-/* .header .header-buttons {
-    flex-direction: row;
-} */
 
 .header h1 {
     font-size: 62px;
     line-height: 77.5px;
     letter-spacing: -3px;
     margin: 20px 0 10px;
-    font-weight: 700;
 }
 
 .header p {
     font-size: 16px;
     line-height: 20.8px;
     margin: 10px 0;
-    font-weight: 400;
 }
 
 a.btn-header-read {
@@ -254,7 +241,7 @@ a.btn-header-read {
     --bs-btn-font-size: 14px;
     --bs-btn-font-weight: 600;
     --bs-btn-line-height: 50px;
-    --bs-btn-color: #fff;
+    --bs-btn-color: var(--white-bg);
     --bs-btn-bg: #00d5ee;
     letter-spacing: -0.56px;
     transition: transform .15s ease-in-out;
@@ -262,7 +249,7 @@ a.btn-header-read {
     -moz-transition: transform .15s ease-in-out;
     -ms-transition: transform .15s ease-in-out;
     -o-transition: transform .15s ease-in-out;
-    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-color: var(--white-bg);
     position: relative;
     overflow: hidden;
 }
@@ -308,23 +295,23 @@ a.btn-header-read::before {
 .header a.btn-header-contact {
     --bs-btn-padding-x: 38px;
     --bs-btn-padding-y: 0;
-    --bs-btn-border-color: #fff;
-    --bs-btn-color: #fff;
+    --bs-btn-border-color: var(--white-bg);
+    --bs-btn-color: var(--white-bg);
     --bs-btn-bg: transparent;
+    --bs-btn-font-family: Poppins, sans-serif;
+    --bs-btn-font-size: 14px;
+    --bs-btn-font-weight: 600;
+    --bs-btn-line-height: 50px;
     letter-spacing: -0.56px;
     transition: all .15s ease-in-out;
     -webkit-transition: all .15s ease-in-out;
     -moz-transition: all .15s ease-in-out;
     -ms-transition: all .15s ease-in-out;
     -o-transition: all .15s ease-in-out;
-    --bs-btn-font-family: Poppins, sans-serif;
-    --bs-btn-font-size: 14px;
-    --bs-btn-font-weight: 600;
-    --bs-btn-line-height: 50px;
 }
 
 .header .btn-header-contact:hover {
-    background-color: #fff;
+    background-color: var(--white-bg);
     color: #000;
     transform: translateY(-3px);
     -webkit-transform: translateY(-3px);
@@ -339,21 +326,21 @@ a.btn-header-read::before {
 
 .header .left-right button {
     background-color: transparent !important;
-    border: #fff 2px solid;
+    border: var(--white-bg) 2px solid;
     padding: 0 10px;
     position: relative;
-    color: #fff;
+    color: var(--white-bg);
     z-index: 2;
     width: 50px;
     height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    transition: 100 0.5s ease;
-    -webkit-transition: 100 0.5s ease;
-    -moz-transition: 100 0.5s ease;
-    -ms-transition: 100 0.5s ease;
-    -o-transition: 100 0.5s ease;
+    transition: all 0.5s ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -ms-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
 }
 
 .header .left-right button::before {
@@ -361,7 +348,7 @@ a.btn-header-read::before {
     width: 250%;
     height: 100%;
     position: absolute;
-    background-color: #fff;
+    background-color: var(--white-bg);
     transform: translateX(-200%);
     -webkit-transform: translateX(-200%);
     -moz-transform: translateX(-200%);
@@ -390,32 +377,24 @@ a.btn-header-read::before {
 
 /* Start of About */
 .about {
-    color: #787878;
-    /* font-family: "Source Sans Pro", sans-serif; */
-    font-size: 16px;
-    line-height: 24px;
+    color: var(--text-hover);
+    font-family: "Source Sans Pro", sans-serif;
     padding: 110px 0;
-    font-weight: 400;
     border-bottom: #dedede 1px solid;
 }
 
 .about h2 {
-    color: #1f1f1f;
-    font-family: navbar;
+    color: var(--text-main);
+    font-family: Poppins, sans-serif;
     font-size: 13px;
     line-height: 16.9px;
     letter-spacing: 0.65px;
     margin: 0 0 10px;
-    font-weight: 500;
-    text-transform: uppercase;
 }
 
 .about p {
-    font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
     line-height: 30px;
     margin: 20px 0;
-    font-weight: 100;
 }
 
 .about p span {
@@ -424,81 +403,49 @@ a.btn-header-read::before {
 
 .about p span::after {
     content: "|";
-    color: #787878;
+    color: var(--text-hover);
 }
 
 .about a.btn-about {
     letter-spacing: 0.55px;
-    text-transform: uppercase;
     --bs-btn-padding-x: 30px;
     --bs-btn-padding-y: 0;
     --bs-btn-font-family: Poppins, sans-serif;
     --bs-btn-font-size: 11px;
     --bs-btn-font-weight: 500;
     --bs-btn-line-height: 48px;
-    --bs-btn-color: #1f1f1f;
-    --bs-btn-bg: #fff;
+    --bs-btn-color: var(--text-main);
+    --bs-btn-bg: var(--white-bg);
     --bs-btn-border-width: 1px;
     --bs-btn-border-color: #dedede;
     --bs-btn-border-radius: 0;
-    --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #1f1f1f;
-    --bs-btn-hover-border-color: #1f1f1f;
+    --bs-btn-hover-color: var(--white-bg);
+    --bs-btn-hover-bg: var(--text-main);
+    --bs-btn-hover-border-color: var(--text-main);
 }
 
 /* End of About */
 
 /* Start of Team */
 .team {
-    color: #787878;
+    color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
     padding: 110px 0;
-    font-weight: 400;
 }
 
 .team h2 {
-    color: #1f1f1f;
+    color: var(--text-main);
     font-family: Poppins, sans-serif;
     font-size: 32px;
     line-height: 41.6px;
     letter-spacing: -1px;
     margin: 20px 0 10px;
-    font-weight: 700;
 }
 
 .team h3 {
     font-size: 18px;
     line-height: 23.4px;
     margin: 10px 0;
-    font-weight: 400;
-}
-
-.nav-social-team {
-    --bs-nav-link-padding-x: 0;
-    --bs-nav-link-padding-y: 20px;
-    display: flex;
-    flex-direction: row;
-    padding-left: 0;
-    margin-bottom: 0;
-    list-style: none;
-}
-
-.nav-social-team a {
-    font-size: 13px;
-    color: #fff;
-    text-shadow: 0;
-    transition: text-shadow 0.5s ease-in-out;
-    -webkit-transition: text-shadow 0.5s ease-in-out;
-    -moz-transition: text-shadow 0.5s ease-in-out;
-    -ms-transition: text-shadow 0.5s ease-in-out;
-    -o-transition: text-shadow 0.5s ease-in-out;
-}
-
-.nav-social-team a:hover {
-    color: #fff;
-    text-shadow: 1px 1px 5px #fff;
 }
 
 .team .team-bottom h4 {
@@ -506,25 +453,16 @@ a.btn-header-read::before {
     font-size: 13px;
     line-height: 16.9px;
     letter-spacing: 0.52px;
-    font-weight: 600;
-    text-transform: uppercase;
 }
 
 .team .team-bottom h5 {
     font-family: Poppins, sans-serif;
     font-size: 12px;
     line-height: 18px;
-    font-weight: 400;
 }
 
 .team .team-overlay {
     background-color: #00d6eee1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
     opacity: 0;
     transition: all 0.4s ease;
     -webkit-transition: all 0.4s ease;
@@ -551,25 +489,16 @@ a.btn-header-read::before {
 
 /* Start of Services */
 .service {
-    /* background-color: #1f1f1f; */
     background-color: #626262;
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
-    font-weight: 400;
-    padding-top: 110px;
-    padding-bottom: 110px;
+    padding: 110px 0;
 }
 
 .service span {
-    display: block;
     font-family: Poppins, sans-serif;
     font-size: 13px;
     line-height: 16.9px;
     letter-spacing: 1.3px;
-    /* margin: 0 0 10px; */
-    font-weight: 600;
-    text-transform: uppercase;
     margin-top: 26px;
     margin-bottom: 26px;
     padding: 0 10px;
@@ -581,22 +510,15 @@ a.btn-header-read::before {
     line-height: 41.6px;
     letter-spacing: -1px;
     margin: 20px 0 10px;
-    font-weight: 700;
-    text-transform: uppercase;
 }
 
 .service p {
     font-size: 14px;
-    line-height: 24px;
     margin: 20px 0 30px;
-    font-weight: 400;
 }
 
 .service li {
-    font-size: 16px;
-    line-height: 24px;
     padding: 6px 0;
-    font-weight: 400;
 }
 
 .service ul li::before {
@@ -611,52 +533,43 @@ a.btn-header-read::before {
 
 /* Start of Pricing */
 .pricing {
-    color: #787878;
+    color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
-    font-size: 16px;
-    line-height: 24px;
     padding: 110px 0;
-    font-weight: 400;
 }
 
 .pricing h2 {
-    color: #1f1f1f;
+    color: var(--text-main);
     font-family: Poppins, sans-serif;
     font-size: 32px;
     line-height: 41.6px;
     letter-spacing: -1px;
     margin: 20px 0 10px;
-    font-weight: 900;
-    text-align: center;
 }
 
 .pricing h3 {
     font-size: 18px;
     line-height: 23.4px;
     margin: 10px 0;
-    font-weight: 400;
-    text-align: center;
 }
 
 .pricing .card {
     --bs-card-border-color: transparent;
     --bs-card-border-radius: 0;
-    --bs-card-bg: white;
-    background-color: white;
+    --bs-card-bg: var(--white-bg);
+    background-color: var(--white-bg);
     max-width: 400px;
     margin: 50px auto 25px;
     padding: 25px 15px;
-    background-color: #fff;
+    background-color: var(--white-bg);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.115);
 }
 
 .pricing .card h4 {
-    color: #1f1f1f;
-    font-family: navbar;
+    color: var(--text-main);
+    font-family: Poppins, sans-serif;
     font-size: 13px;
     line-height: 16.9px;
-    font-weight: 400;
-    position: relative;
 }
 
 .pricing .badge-best {
@@ -665,9 +578,7 @@ a.btn-header-read::before {
     --bs-badge-padding-y: 5px;
     --bs-badge-padding-x: 10px;
     font-family: Poppins, sans-serif;
-    font-weight: 500;
     line-height: 13.5px;
-    vertical-align: baseline;
     background-color: #00C3DA;
     position: absolute;
     top: 30px;
@@ -675,8 +586,8 @@ a.btn-header-read::before {
 }
 
 .pricing .card p {
-    color: #1f1f1f;
-    font-family: navbar;
+    color: var(--text-main);
+    font-family: Poppins, sans-serif;
     font-size: 55px;
     line-height: 71.5px;
     letter-spacing: -3px;
@@ -690,16 +601,15 @@ a.btn-header-read::before {
 }
 
 .pricing .card p span {
-    font-family: navbar;
+    font-family: Poppins, sans-serif;
     font-size: 18px;
     line-height: 23.4px;
     letter-spacing: -3px;
     vertical-align: top;
-    font-weight: 400;
 }
 
 .pricing .card ul {
-    color: #787878;
+    color: var(--text-hover);
     padding-top: 15px;
 }
 
@@ -712,7 +622,7 @@ a.btn-header-read::before {
 
 /* Star of Work */
 .work {
-    color: #787878;
+    color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
     padding: 110px 0;
 }
@@ -720,140 +630,90 @@ a.btn-header-read::before {
 .work-img img {
     width: 100px;
     height: 100px;
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .work-box {
-    background-color: #fff;
-    color: #787878;
-    font-size: 16px;
-    line-height: 24px;
+    background-color: var(--white-bg);
+    color: var(--text-hover);
     margin: 50px 0;
-    padding: 70px 50px 50px;
-    font-weight: 400;
-    border-radius: 15px;
-    -webkit-border-radius: 15px;
-    -moz-border-radius: 15px;
-    -ms-border-radius: 15px;
-    -o-border-radius: 15px;
     position: relative;
 }
 
 .work-img {
     position: absolute;
-    bottom: 80%;
+    bottom: 70%;
     left: 50%;
-    transform: translateX(-50%);
-    -webkit-transform: translateX(-50%);
-    -moz-transform: translateX(-50%);
-    -ms-transform: translateX(-50%);
-    -o-transform: translateX(-50%);
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
 }
 
 .work h2 {
-    color: #1f1f1f;
+    color: var(--text-main);
     font-family: Poppins, sans-serif;
     font-size: 13px;
     line-height: 16.9px;
     letter-spacing: 0.65px;
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-bottom: 30px;
 }
 
 .work h3 {
-    color: #1f1f1f;
+    color: var(--text-main);
     font-family: Poppins, sans-serif;
-    font-size: 24px;
     line-height: 31.2px;
     letter-spacing: -0.72px;
-    font-weight: 700;
     margin: 25px 0 10px;
 }
 
 .work span {
-    color: #787878;
+    color: var(--text-hover);
     font-family: Poppins, sans-serif;
     font-size: 12px;
     line-height: 18px;
     letter-spacing: 0.36px;
-    font-weight: 500;
-    text-transform: uppercase;
 }
 
 .work p {
-    margin-top: 30px;
-    color: #787878;
+    color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
     font-size: 15px;
     line-height: 27px;
-    font-weight: 200;
 }
 
 .work .carousel-indicators [data-bs-target] {
-    border-radius: 50%;
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
-    -ms-border-radius: 50%;
-    -o-border-radius: 50%;
     width: 10px;
     height: 10px;
-    background-color: #787878;
+    background-color: var(--text-hover);
 }
 
 .work .carousel-indicators .active {
     background-color: #00BFD8;
 }
 
-.work .carousel-indicators {
-    /* margin-top: 40px; */
-}
-
-.work .carousel {
-    width: 75%;
-}
-
 .work .carousel-control-next,
 .work .carousel-control-prev {
     width: 5%;
-    color: #787878;
-    /* background: red; */
+    color: var(--text-hover);
 }
 
 /* End of Work */
 
 /* Start of Contact */
 iframe {
-    width: 100%;
     height: 400px;
 }
 
 .contact h2 {
-    color: rgb(31, 31, 31);
+    color: var(--text-main);
     font-family: Poppins, sans-serif;
     font-size: 32px;
     line-height: 41.6px;
     letter-spacing: -1px;
     margin: 20px 0 10px;
-    font-weight: 700;
 }
 
 .contact h3 {
-    color: #787878;
+    color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
     font-size: 18px;
     line-height: 23.4px;
     margin: 10px 0;
-    font-weight: 400;
 }
 
 .contact .form-control {
