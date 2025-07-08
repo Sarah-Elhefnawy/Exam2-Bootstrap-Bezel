@@ -3,9 +3,6 @@
 
 /* md */
 @media (min-width: 768px) {
-    .header .left-right {
-        display: block !important;
-    }
 }
 
 /* lg */
@@ -29,16 +26,27 @@
         color: #787878;
     }
 
-    .nav-social-container {
-        display: block;
-    }
-
     .pricing .col-12:nth-child(3) {
         transform: scale(1.08);
         -webkit-transform: scale(1.08);
         -moz-transform: scale(1.08);
         -ms-transform: scale(1.08);
         -o-transform: scale(1.08);
+    }
+
+    .service .service-header h2[data-bigletter]::before {
+        z-index: 0;
+        content: attr(data-bigletter);
+        font-size: 60px;
+        font-weight: 600;
+        opacity: 0.1;
+        position: absolute;
+        left: 0;
+        transform: translate(-5%, -20%);
+        -webkit-transform: translate(-5%, -20%);
+        -moz-transform: translate(-5%, -20%);
+        -ms-transform: translate(-5%, -20%);
+        -o-transform: translate(-5%, -20%);
     }
 
     iframe {

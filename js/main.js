@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', function () {
   const homeHeight = homeSection.offsetHeight + 5900;
 
   window.addEventListener('scroll', function () {
-    if (scrollY > homeHeight * 0.05) {
+    if (scrollY > homeHeight * 0.04) {
       navbar.classList.add('scrolled');
       navbarBrand.classList.add('scrolled');
       navbarSocial.forEach(function (link) {

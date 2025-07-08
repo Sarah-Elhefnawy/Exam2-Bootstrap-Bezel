@@ -16,7 +16,22 @@
 }
 
 main {
-    background-color: #F7F7F7;
+    background-color: var(--white-bg);
+}
+
+section:not(.contact) h2[data-bigletter]::before {
+    z-index: 0;
+    content: attr(data-bigletter);
+    font-size: 60px;
+    font-weight: 600;
+    opacity: 0.1;
+    position: absolute;
+    right: 50%;
+    transform: translate(50%, -20%);
+    -webkit-transform: translate(50%, -20%);
+    -moz-transform: translate(50%, -20%);
+    -ms-transform: translate(50%, -20%);
+    -o-transform: translate(50%, -20%);
 }
 
 /* Start of Navbar */
@@ -320,10 +335,6 @@ a.btn-header-read::before {
     -o-transform: translateY(-3px);
 }
 
-.header .left-right {
-    display: none !important;
-}
-
 .header .left-right button {
     background-color: transparent !important;
     border: var(--white-bg) 2px solid;
@@ -535,6 +546,7 @@ a.btn-header-read::before {
 .pricing {
     color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
+    background-color: #F7F7F7;
     padding: 110px 0;
 }
 
@@ -623,6 +635,7 @@ a.btn-header-read::before {
 /* Star of Work */
 .work {
     color: var(--text-hover);
+    background-color: #F7F7F7;
     font-family: "Source Sans Pro", sans-serif;
     padding: 110px 0;
 }
@@ -706,6 +719,21 @@ iframe {
     line-height: 41.6px;
     letter-spacing: -1px;
     margin: 20px 0 10px;
+}
+
+.contact h2[data-bigletter]::before {
+    z-index: 0;
+    content: attr(data-bigletter);
+    font-size: 60px;
+    font-weight: 600;
+    opacity: 0.1;
+    position: absolute;
+    left: 0;
+    transform: translate(-10%, -20%);
+    -webkit-transform: translate(-10%, -20%);
+    -moz-transform: translate(-10%, -20%);
+    -ms-transform: translate(-10%, -20%);
+    -o-transform: translate(-10%, -20%);
 }
 
 .contact h3 {
