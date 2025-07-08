@@ -88,14 +88,14 @@ nav .logo img {
 
 .nav-social a {
     color: var(--white-bg);
-    transition: color 0.3s ease;
-    -webkit-transition: color 0.3s ease;
-    -moz-transition: color 0.3s ease;
-    -ms-transition: color 0.3s ease;
-    -o-transition: color 0.3s ease;
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
 }
 
-.nav-social a:hover {
+.navbar .nav-social a:hover {
     color: var(--text-hover);
 }
 
@@ -390,7 +390,6 @@ a.btn-header-read::before {
 .about {
     color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
-    padding: 110px 0;
     border-bottom: #dedede 1px solid;
 }
 
@@ -441,7 +440,6 @@ a.btn-header-read::before {
 .team {
     color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
-    padding: 110px 0;
 }
 
 .team h2 {
@@ -496,13 +494,16 @@ a.btn-header-read::before {
     -o-transform: translateY(0);
 }
 
+.team .nav-social a:hover {
+    text-shadow: var(--white-bg) 0 0 6px;
+}
+
 /* End of Team */
 
 /* Start of Services */
 .service {
     background-color: #626262;
     font-family: "Source Sans Pro", sans-serif;
-    padding: 110px 0;
 }
 
 .service span {
@@ -547,7 +548,6 @@ a.btn-header-read::before {
     color: var(--text-hover);
     font-family: "Source Sans Pro", sans-serif;
     background-color: #F7F7F7;
-    padding: 110px 0;
 }
 
 .pricing h2 {
@@ -637,7 +637,6 @@ a.btn-header-read::before {
     color: var(--text-hover);
     background-color: #F7F7F7;
     font-family: "Source Sans Pro", sans-serif;
-    padding: 110px 0;
 }
 
 .work-img img {
